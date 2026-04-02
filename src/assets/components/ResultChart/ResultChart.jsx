@@ -48,7 +48,7 @@ const resultData = [
     },
     {
       "student_id": 7,
-      "name": "Grace",
+      "name": "Rauf",
       "physics": 91,
       "chemistry": 94,
       "math": 90
