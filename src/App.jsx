@@ -147,7 +147,45 @@
 // export default App
 
 // // -------------------------------End:34_5-(1) to (25) ---------------------------------------
-// -------------------------------Start: 34_7 ---------------------------------------
+// // -------------------------------Start: 34_7 ---------------------------------------
+
+// import './App.css'
+// import DaisyNav from './assets/components/DaisyNav/DaisyNav'
+// import NavBar from './assets/components/DaisyNav/NavBar/NavBar'
+// import { Suspense } from 'react'
+// import PricingOptions from './assets/components/PricingOptions/PricingOptions'
+// import ResultChart from './assets/components/ResultChart/ResultChart'
+
+
+// const pricingPromise = fetch('pricingData.json').then(res => res.json());
+
+// function App() {
+
+//   return (
+//     <>
+//       <header>
+        
+//         <NavBar></NavBar>
+        
+//       </header>
+//       <main>
+        
+//         <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
+            
+//             <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
+//         </Suspense>
+//         {/* (1) then in ResultChart.jsx*/}
+//         <ResultChart></ResultChart>
+//       </main>
+ 
+//     </>
+//   )
+// }
+
+// export default App
+
+// // -------------------------------End:34_7-(1) to () ---------------------------------------
+// -------------------------------Start: 34_8 ---------------------------------------
 
 import './App.css'
 import DaisyNav from './assets/components/DaisyNav/DaisyNav'
@@ -155,9 +193,13 @@ import NavBar from './assets/components/DaisyNav/NavBar/NavBar'
 import { Suspense } from 'react'
 import PricingOptions from './assets/components/PricingOptions/PricingOptions'
 import ResultChart from './assets/components/ResultChart/ResultChart'
+import axios from 'axios'
+import MarksChart from './assets/components/MarksChart/MarksChart'
 
 
 const pricingPromise = fetch('pricingData.json').then(res => res.json());
+// (2)axios+enter
+const marksPromise = axios.get('marksData.json')
 
 function App() {
 
@@ -174,7 +216,16 @@ function App() {
             
             <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
         </Suspense>
-        {/* (1) then in ResultChart.jsx*/}
+        {/* (3)st */}
+        {/* <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
+          <MarksChart marksPromise={marksPromise}></MarksChart>
+        </Suspense> */}
+        {/* (3)en then in MarksChart.jsx*/}
+          <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
+            <MarksChart marksPromise={marksPromise}></MarksChart>
+          </Suspense>
+        
+       
         <ResultChart></ResultChart>
       </main>
  
@@ -184,4 +235,4 @@ function App() {
 
 export default App
 
-// -------------------------------End:34_7-(1) to () ---------------------------------------
+// -------------------------------End:34_8-(1) to () ---------------------------------------

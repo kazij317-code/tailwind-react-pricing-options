@@ -1,7 +1,7 @@
 // -------------------------------Start: 34_7 ---------------------------------------
 // (20)st rsc+enter
 import React from 'react';
-import { LineChart } from 'recharts';
+import { Line, LineChart, XAxis, YAxis } from 'recharts';
 // (3) from AI
 const resultData = [
     {
@@ -79,10 +79,19 @@ const resultData = [
 const ResultChart = () => {
     return (
         <div>
-            {/* (2)st */}
+            {/* (2)st<LineChart+enter */}
             {/* (4)data={resultData}
  */}
             <LineChart width={500} height={500} data={resultData}>
+            {/* (6)st XAxis+enter */}
+            <XAxis dataKey="name"></XAxis>
+            <YAxis></YAxis>
+            {/* (6)en then run in terminal npm install axios then create marksData.json in public folder then create MarksChart.jsx in MarksChart folder in component folder */}
+
+             {/* (5)st <Line+enter*/}
+            <Line dataKey="math"></Line>
+            <Line dataKey={'chemistry'} stroke='red'></Line>
+              {/* (5)en */}
 
             </LineChart>
             {/* (2)en */}
