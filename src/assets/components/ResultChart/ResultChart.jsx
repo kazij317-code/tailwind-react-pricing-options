@@ -6,21 +6,21 @@ import { LineChart } from 'recharts';
 const resultData = [
     {
       "student_id": 1,
-      "name": "Alice",
+      "name": "Mithu",
       "physics": 85,
       "chemistry": 90,
       "math": 88
     },
     {
       "student_id": 2,
-      "name": "Bob",
+      "name": "Nabhan",
       "physics": 92,
       "chemistry": 85,
       "math": 91
     },
     {
       "student_id": 3,
-      "name": "Charlie",
+      "name": "Shema",
       "physics": 78,
       "chemistry": 82,
       "math": 80
