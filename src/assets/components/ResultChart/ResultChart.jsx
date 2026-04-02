@@ -27,21 +27,21 @@ const resultData = [
     },
     {
       "student_id": 4,
-      "name": "David",
+      "name": "Fariha",
       "physics": 88,
       "chemistry": 86,
       "math": 92
     },
     {
       "student_id": 5,
-      "name": "Eva",
+      "name": "Meem",
       "physics": 95,
       "chemistry": 91,
       "math": 93
     },
     {
       "student_id": 6,
-      "name": "Frank",
+      "name": "Shimul",
       "physics": 80,
       "chemistry": 78,
       "math": 85
