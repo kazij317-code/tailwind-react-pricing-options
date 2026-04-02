@@ -1,0 +1,22 @@
+ /* -------------------------------Start: 34_1 --------------------------------------- */
+/* (6) import from google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* (3) import from tailwind */
+@import "tailwindcss";
+
+/* (9) copy from daisyUI */
+@plugin "daisyui";
+
+/* (7) import from google font and modify*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+/* (8) copy and paste from daisyUI in cmd: npm i -D daisyui@latest  */
+ /* -------------------------------End:34_1-(1) to (11) --------------------------------------- */
