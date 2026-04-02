@@ -12,7 +12,7 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: "/tailwind-react-pricing-options/"
-})
+base: "/tailwind-react-pricing-options/"
+});
 
 // -------------------------------End:34_1-(1) to (9) ---------------------------------------
